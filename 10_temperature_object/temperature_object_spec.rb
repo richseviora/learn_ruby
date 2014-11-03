@@ -13,7 +13,7 @@ describe Temperature do
     describe "in degrees fahrenheit" do
       it "at 50 degrees" do
         # A hash with the key "f" is being passed in.
-        Temperature.new({:f => 50}).to_fahrenheit.to eq 50
+        expect(Temperature.new({:f => 50}).to_fahrenheit).to eq(50)
         # Remember, new is synonymous with initialize.
         # An example might help:
         #

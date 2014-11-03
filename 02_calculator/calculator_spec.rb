@@ -55,9 +55,11 @@ end
 describe "#multiply" do
 
   it "multiplies two numbers" do
+    expect(multiply(2,3)).to eq(6)
   end
 
   it "multiplies several numbers" do
+    expect(multiply(2,3,4)).to eq(24)
   end
 
 end
@@ -66,17 +68,22 @@ end
 describe "#factorial" do
 
   it "computes the factorial of 0" do
+    expect(factorial(0)).to eq(1)
   end
 
   it "computes the factorial of 1" do
+    expect(factorial(1)).to eq(1)
   end
 
   it "computes the factorial of 2" do
+    expect(factorial(2)).to eq(2)
   end
 
   it "computes the factorial of 5" do
+    expect(factorial(5)).to eq(120)
   end
 
   it "computes the factorial of 10" do
+    expect(factorial(10)).to eq(3628800)
   end
 end
